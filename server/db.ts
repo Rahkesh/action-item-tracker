@@ -98,7 +98,13 @@ export function seedInitialData(preset: 'normal' | 'one-each-member' | 'one-each
   insertUser.run('fraaz', 'Fraaz Ahmed K', 'fraaz@team.local', 'Co-Lead & Operations Lead', '#059669', now);
 
   if (preset === 'normal') {
-    logActivity('WORKSPACE_INITIALIZED', null, 'System', 'Workspace initialized in Normal Mode with 0 items assigned for Rahkesh Kanna H and Fraaz Ahmed K');
+    logActivity({
+      task_id: null,
+      user_id: 'system',
+      user_name: 'System',
+      action_type: 'CREATE',
+      details: 'Workspace initialized in Normal Mode with 0 items assigned for Rahkesh Kanna H and Fraaz Ahmed K'
+    });
     return;
   }
 
