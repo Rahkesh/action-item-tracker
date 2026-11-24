@@ -1,0 +1,7 @@
+name = "action-item-tracker"
+pages_build_output_dir = "dist"
+compatibility_date = "2024-11-01"
+
+[[kv_namespaces]]
+binding = "ACTION_TRACKER_KV"
+id = "32538a41cb3f4104854110da29bcb862"

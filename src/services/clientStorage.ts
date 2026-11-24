@@ -5,11 +5,11 @@ const COMMENTS_KEY = 'action_tracker_comments';
 const ACTIVITY_KEY = 'action_tracker_activity';
 const EMAILS_KEY = 'action_tracker_emails';
 const VERSION_KEY = 'action_tracker_version';
-const VERSION_VALUE = '2.0-normal';
+const VERSION_VALUE = '3.0-clean-production';
 
 // Shared Cloud Sync Endpoint for Rahkesh Kanna H & Fraaz Ahmed K
 // Ensures that whenever either team member opens the site on any device, they share the exact same action items
-const CLOUD_SYNC_ENDPOINT = 'https://kvdb.io/8xV6QJ74UhyV3MhVcx8Uo6/action_tracker_prod_v2';
+const CLOUD_SYNC_ENDPOINT = '/api/sync';
 
 export const USER_EMAILS: Record<string, { name: string; email: string }> = {
   'Rahkesh Kanna H': { name: 'Rahkesh Kanna H', email: 'rahkesh@team.local' },
